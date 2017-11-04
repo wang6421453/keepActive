@@ -1,0 +1,16 @@
+{
+   "name":"love You Ten thousand Years",
+   "version":"1.0",
+   "manifest_version": 2,
+   "description":"保持登陆状态-------爱你一万年",
+   "icons":{"16":"imgs/icon.png","48":"imgs/icon.png","128":"imgs/icon.png"},
+   "content_scripts": [
+    {
+      "matches": ["http://10.67.7.34/wl/*"],
+      "all_frames": true,
+      "js": ["jquery.js", "keepActive.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": ["inject.js"]
+}
